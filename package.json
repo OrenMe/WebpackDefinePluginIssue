@@ -1,0 +1,37 @@
+{
+  "name": "WebpackDefinePluginIssue",
+  "version": "0.18.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "prebuild": "npm run clean",
+    "build": "NODE_ENV=production webpack",
+    "dev": "webpack-dev-server",
+    "watch": "webpack --progress --colors --watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.23.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orenme/WebpackDefinePluginIssue"
+  },
+  "keywords": [
+    "webpack",
+    "DefinePlugin",
+    "babel"
+  ],
+  "license": "AGPLV3",
+  "bugs": {
+    "url": "https://github.com/orenme/WebpackDefinePluginIssue/issues"
+  },
+  "homepage": "https://github.com/orenme/WebpackDefinePluginIssue"
+}
